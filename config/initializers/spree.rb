@@ -11,9 +11,13 @@
 # config.setting_name = 'new value'
 Spree.config do |config|
   # Example:
-  # Uncomment to stop tracking inventory levels in the application
-  config.track_inventory_levels = false
+  # Tracking inventory levels in the application
+  config.track_inventory_levels = true
   config.currency = "EUR"
+  config.admin_products_per_page = 30
+  config.always_put_site_name_in_title = true
+  config.company = false
+
   
 end
 
