@@ -12,8 +12,8 @@
 Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
-  # config.track_inventory_levels = false
-
+  config.track_inventory_levels = false
+  config.currency = "EUR"
   
 end
 
@@ -28,5 +28,12 @@ Spree::UserSessionsController.class_eval do
   include SpreeI18n::ControllerLocaleHelper
 end
 
+### LOCALES ###
 # Set default local to FR
 I18n.default_locale = :'fr'
+# Displayed on frontend select box
+SpreeI18n::Config.available_locales = [:en, :fr]
+# Displayed on translation forms
+SpreeGlobalize::Config.supported_locales = [:en, :fr] 
+
+
