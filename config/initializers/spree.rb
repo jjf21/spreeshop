@@ -36,8 +36,8 @@ end
 # Set default local to FR
 I18n.default_locale = :'fr'
 # Displayed on frontend select box
-SpreeI18n::Config.available_locales = [:en, :fr]
+SpreeI18n::Config.available_locales = [:en, :fr, :es]
 # Displayed on translation forms
-SpreeGlobalize::Config.supported_locales = [:en, :fr] 
+SpreeGlobalize::Config.supported_locales = [:en, :fr, :es] 
 
 
